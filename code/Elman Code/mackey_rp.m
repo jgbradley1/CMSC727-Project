@@ -1,15 +1,21 @@
+clear('data','col_names','time','targets','t','tm','net');
+clear('Xs','Xi','Ai','Ts','pred','true','mse');
+
 % load data
 load('mackeyglass.mat');
-time         = data(:, 1)';
+input        = data(:, 1)';
 targets      = data(:, 2)';
 
-% initialize the net
-net = fitnet(10, 'trainrp');
-%net.trainParam.epochs  = 2000;
-%net.trainParam.max_fail = 20;
-%net.trainParam.delta0   = 0.07;
-%net.trainParam.delt_inc = 1.2;
-%net.trainParam.delt_dec = 0.5;
+% initialize net
+net = fitnet(10,'trainrp');
+net.trainParam.epochs   = 2000;
+net.trainParam.max_fail = 20;
 
-% train the net
-net = train(net, time, targets);
+% train net
+net = train(net,input(1:4000),targets(1:4000));
+
+% check performance
+pred = net(input(4000:5000));
+true = targets(4000:5000);
+mse = mean((pred-true).^2);
+mse

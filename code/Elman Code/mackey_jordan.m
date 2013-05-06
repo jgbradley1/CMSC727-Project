@@ -14,6 +14,10 @@ end
 % initialize net
 net = elmannet(1:2,10,'trainrp');
 
+% jordanify
+net.layerConnect = [0 1; 1 0];
+net.layerWeights{1,2}.delays = 1;
+
 [Xs,Xi,Ai,Ts] = preparets(net,tm,t);
 net.trainParam.epochs   = 2000;
 net.trainParam.max_fail = 20;
