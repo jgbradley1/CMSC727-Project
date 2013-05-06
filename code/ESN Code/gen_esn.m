@@ -1,10 +1,11 @@
-function esn = gen_esn(inputSize, resSize, outputSize, leakRate)
+function esn = gen_esn(inputSize, resSize, outputSize, leakRate, spectral_radius)
 	
 	% define the ESN parameters
 	esn.numInputs = inputSize;
 	esn.reservoirSize = resSize;
 	esn.numOutputs = outputSize;
 	esn.leak_rate = leakRate;
+    esn.alpha = spectral_radius;
 	esn.totalUnits = inputSize + resSize + outputSize;
 
 
@@ -15,7 +16,10 @@ function esn = gen_esn(inputSize, resSize, outputSize, leakRate)
 
 	% ensure the reservoir has the echo state property
 	% normalize and set spectral radius
-	%disp 'Computing spectral radius...';
-	rhoW = abs(eigs(esn.RW,1));			% find the "largest eigenvalue" (by the "largest magnitude" measure scale)
-	esn.RW = esn.RW .* ( 1.25 /rhoW);
 	
+    opts.tol = 1e-3;                        % reduce the tolerance of the eigs() function
+	rhoW = abs(eigs(esn.RW,1, 'lm', opts));       % find the "largest eigenvalue" (by the "largest magnitude" measure scale)
+    esn.RW = esn.RW .* (1/rhoW);            % Normalize W to have unit spectral radius
+    
+    esn.RW = esn.alpha .* esn.RW;           % Redefine W to have a spectral radius of alpha
+end

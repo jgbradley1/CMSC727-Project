@@ -33,6 +33,6 @@ function esn = train_esn(esn, dataFile, trainLen, initLen)
 	esn.x = x; % last reservoir state in training cycle - to be used when running test data
 
 	% train the output - using pseudoinverse method
-	reg = 1e-8;  % regularization coefficient
+	reg = 1e-8;  % regularization coefficient - used for data smoothing
 	X_T = esn.X';
 	esn.OW = (esn.target*X_T) / (esn.X*X_T + reg*eye(1+esn.numInputs+esn.reservoirSize));
