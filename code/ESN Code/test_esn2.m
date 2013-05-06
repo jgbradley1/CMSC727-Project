@@ -30,10 +30,10 @@ function esn = test_esn2(esn, dataFile, testLen)
             
             % GENERATIVE MODE -- this mode will only work if the number of
             % input nodes equals the number of output nodes
-            u = y;
+            %u = y;
         
             % PREDICTIVE MODE
-            %u = data(esn.trainLength+1+t, 1:esn.inputSize)';
+            u = data(esn.trainLength+1+t, 1:esn.inputSize)';
         end
     end
     

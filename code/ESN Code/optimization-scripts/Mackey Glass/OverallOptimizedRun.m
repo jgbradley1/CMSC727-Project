@@ -1,3 +1,5 @@
+addpath('../../');
+
 inputSize = 1;
 outputSize = 1;
 reservoirSize = 180;
@@ -15,9 +17,11 @@ disp('Overall Optimization Performance');
 net = gen_esn(inputSize, reservoirSize, outputSize, leakRate, spectralRadius);
 
 % train_esn(esn, dataFile, trainLen, initLen)
-net = train_esn(net, 'data/MackeyGlass_t17_single_column', trainingSize, forgetSize);
+net = train_esn(net, '../../data/MackeyGlass_t17_single_column', trainingSize, forgetSize);
 
 % test_esn(esn, dataFile, testLen)
-net = test_esn(net, 'data/MackeyGlass_t17_single_column', testingSize);
+net = test_esn(net, '../../data/MackeyGlass_t17_single_column', testingSize);
 
 disp(['Overall Performance: ', num2str(net.mse)]);
+
+rmpath('../../');

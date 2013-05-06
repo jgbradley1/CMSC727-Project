@@ -12,7 +12,7 @@ function esn = test_esn(esn, dataFile, testLen)
 	% run the ESN in generative mode
 	% generate the next testLen number of data points
 	Y = zeros(esn.numOutputs,testLen);
-	u = data(esn.trainLength+1);
+	u = data(esn.trainLength+1, 1:esn.numInputs);
 	x = esn.x;
 	for t = 1:testLen
 		x = (1-esn.leak_rate)*x + esn.leak_rate*tanh( esn.IW*[1;u] + esn.RW*x );
@@ -27,7 +27,7 @@ function esn = test_esn(esn, dataFile, testLen)
             %u = y;
         
             % PREDICTIVE MODE
-            u = data(esn.trainLength+t+1);
+            u = data(esn.trainLength+t+1, 1:esn.numInputs);
         end
 	end
 
@@ -35,9 +35,9 @@ function esn = test_esn(esn, dataFile, testLen)
 
 	% compute error
 	%errorLen = 500;
-	%mse = sum((data(esn.trainLength+2 : esn.trainLength+errorLen+1)' - Y(1, 1: errorLen)).^2) ./ errorLen;
+	%mse = sum((data(esn.trainLength+2 : esn.trainLength+errorLen+1, size(data,2))' - Y(1, 1: errorLen)).^2) ./ errorLen;
     
-    mse = sum((data(esn.trainLength+2 : esn.trainLength+testLen+1)' - Y(1, 1: testLen)).^2) ./ testLen;
+    mse = sum((data(esn.trainLength+2 : esn.trainLength+testLen+1, size(data,2))' - Y(1, 1: testLen)).^2) ./ testLen;
 
 	esn.mse = mse;
 	
