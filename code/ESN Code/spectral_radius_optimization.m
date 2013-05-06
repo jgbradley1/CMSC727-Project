@@ -10,11 +10,11 @@ forgetSize = 100;
 disp('Mackey Glass Dataset');
 disp('Spectral Radius Optimization');
 
-X = zeros( floor(0.95/0.05), 1);      % will hold values for graphing the horizontal axis later on
-Y = zeros( floor(0.95/0.05), 1);      % will hold values for graphing the vertical axis later on
+X = zeros(18, 1);      % will hold values for graphing the horizontal axis later on
+Y = zeros(18, 1);      % will hold values for graphing the vertical axis later on
 counter = 1;
 
-for spectralRadius = 0.05:0.05:1.0
+for spectralRadius = 0.05:0.05:0.95
     % gen_esn(inputSize, resSize, outputSize, leakRate, spectral_radius)
     net = gen_esn(inputSize, reservoirSize, outputSize, leakRate, spectralRadius);
 
@@ -39,4 +39,4 @@ ylabel('MSE');
 
 % axis([xmin xmax ymin ymax]) -- leave a little room above the maximum of Y
 % for asthetic purposes
-axis([0 1.1 0 max(Y)+0.05*max(Y)])
+axis([0 1 0 max(Y)+0.05*max(Y)])
