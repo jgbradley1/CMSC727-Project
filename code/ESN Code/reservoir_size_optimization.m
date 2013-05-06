@@ -10,8 +10,8 @@ forgetSize = 100;
 disp('Mackey Glass Dataset');
 disp('Reservoir Size Optimization');
 
-X = zeros( floor(0.95/0.05), 1);      % will hold values for graphing the horizontal axis later on
-Y = zeros( floor(0.95/0.05), 1);      % will hold values for graphing the vertical axis later on
+X = zeros(19, 1);      % will hold values for graphing the horizontal axis later on
+Y = zeros(19, 1);      % will hold values for graphing the vertical axis later on
 counter = 1;
 
 for reservoirSize = 5:5:200
