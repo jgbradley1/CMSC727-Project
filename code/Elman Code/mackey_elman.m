@@ -1,4 +1,4 @@
-clear('data','col_names','samples','targets','t','s','net');
+clear('data','col_names','samples','targets','net');
 clear('trn_t','trn_s','tst_t','tst_s');
 clear('Xs','Xi','Ai','Ts','pred','true','mse');
 
