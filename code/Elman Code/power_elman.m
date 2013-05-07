@@ -20,8 +20,8 @@ end
 net = elmannet(1:2,net_size,'trainrp');
 
 [Xs,Xi,Ai,Ts] = preparets(net,trn_s,trn_t);
-net.trainParam.epochs   = 2000;
-net.trainParam.max_fail = 20;
+%net.trainParam.epochs   = 2000;
+%net.trainParam.max_fail = 20;
 
 % train net
 net = train(net,Xs,Ts,Xi,Ai);

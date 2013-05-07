@@ -14,8 +14,8 @@ tst_t = targets(4000:5000);
 
 % initialize net
 net = fitnet(net_size,'trainrp');
-net.trainParam.epochs   = 2000;
-net.trainParam.max_fail = 20;
+%net.trainParam.epochs   = 2000;
+%net.trainParam.max_fail = 20;
 
 % train net
 net = train(net,trn_s,trn_t);
