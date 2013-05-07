@@ -1,22 +1,27 @@
-clear('data','col_names','samples','samples_time','targets','t','s','net');
+clear('data','col_names','samples','targets','net');
+clear('trn_t','trn_s','tst_t','tst_s');
 clear('Xs','Xi','Ai','Ts','pred','true','mse');
 
 % load data
-load('stocks.mat');
-samples      = data(:, 2:29)';
-samples_time = data(:, 1:29)';
-targets      = data(:, 30)';
+load('stocks_norm.mat');
+samples = data(:, 1:28)';
+targets = data(:, 29)';
+
+trn_s = samples(1:4000);
+trn_t = targets(1:4000);
+tst_s = samples(4000:5000);
+tst_t = targets(4000:5000);
 
 % initialize net
-net = fitnet(10,'trainrp');
+net = fitnet(net_size,'trainrp');
 net.trainParam.epochs   = 2000;
 net.trainParam.max_fail = 20;
 
 % train net
-net = train(net,samples(1:4000),targets(1:4000));
+net = train(net,trn_s,trn_t);
 
 % check performance
-pred = net(samples(4000:5000));
-true = targets(4000:5000);
+pred = net(tst_s);
+true = tst_t;
 mse = mean((pred-true).^2);
 mse

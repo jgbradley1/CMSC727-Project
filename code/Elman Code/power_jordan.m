@@ -1,19 +1,23 @@
-clear('data','col_names','samples','samples_time','targets','t','s','net');
+clear('data','col_names','samples','targets','net');
+clear('trn_t','trn_s','tst_t','tst_s');
 clear('Xs','Xi','Ai','Ts','pred','true','mse');
 
 % load data
-load('power.mat');
-samples      = data(:, 2:7)';
-samples_time = data(:, 1:7)';
-targets      = data(:, 8)';
+load('power_norm.mat');
+samples = data(:, 1:6)';
+targets = data(:, 7)';
 
 for i = 1:4000
-  t(i) = {targets(i)};
-  s(i) = {samples(i)}; 
+  trn_t(i) = {targets(i)};
+  trn_s(i) = {samples(i)}; 
+end
+for i = 4000:5000
+  tst_t(i) = {targets(i)};
+  tst_s(i) = {samples(i)}; 
 end
 
 % initialize net
-net = elmannet(1:2,10,'trainrp');
+net = elmannet(1:2,net_size,'trainrp');
 
 % jordanify
 net.layerConnect = [0 1; 1 0];
