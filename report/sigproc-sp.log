@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  3 MAY 2013 16:36
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  6 MAY 2013 22:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -270,103 +270,83 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for U+msa on input line 75.
+LaTeX Font Info:    Try loading font information for U+msa on input line 22.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 75.
+LaTeX Font Info:    Try loading font information for U+msb on input line 22.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 75.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 22.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Underfull \hbox (badness 1418) in paragraph at lines 76--76
-[][]\T1/aer/m/n/9 (Does NOT pro-duce the per-mis-sion block, copy-right
- []
-
-
-Underfull \hbox (badness 6032) in paragraph at lines 76--76
-\T1/aer/m/n/9 in-for-ma-tion nor page num-ber-ing). For use with
- []
-
-LaTeX Font Info:    Try loading font information for T1+aett on input line 76.
-(/usr/local/texlive/2012/texmf-dist/tex/latex/ae/t1aett.fd
-File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-)
-Overfull \hbox (1.0793pt too wide) in paragraph at lines 77--83
+Overfull \hbox (1.0793pt too wide) in paragraph at lines 24--30
 \T1/aer/m/it/9 Prepar-ing ACM SIG Pro-ceed-ings Us-ing L[]T[]X$\OT1/cmr/m/n/9 2
 []$ \T1/aer/m/it/9 and BibT[]X\T1/aer/m/n/9 .
  []
 
-
-Overfull \hbox (1.26794pt too wide) in paragraph at lines 99--100
-\T1/aer/m/n/9 H.4 [\T1/aer/bx/n/9 Information Sys-tems Ap-pli-ca-tions\T1/aer/m
-/n/9 ]: Mis-cel-la-neous;
- []
-
-
-Underfull \hbox (badness 1360) in paragraph at lines 123--123
+LaTeX Font Info:    Try loading font information for T1+aett on input line 61.
+(/usr/local/texlive/2012/texmf-dist/tex/latex/ae/t1aett.fd
+File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
+)
+Underfull \hbox (badness 1360) in paragraph at lines 61--61
 [][]\T1/aer/m/n/9 Two of these, the \T1/aett/m/n/9 \num-bero-fau-thors \T1/aer/
 m/n/9 and \T1/aett/m/n/9 \alig-nau-
  []
 
 
-Underfull \vbox (badness 1642) has occurred while \output is active []
+LaTeX Warning: Citation `Lamport:LaTeX' on page \thepage  undefined on input li
+ne 117.
 
- [1{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+[1{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
 
 LaTeX Warning: Citation `Lamport:LaTeX' on page \thepage  undefined on input li
-ne 179.
-
-
-LaTeX Warning: Citation `Lamport:LaTeX' on page \thepage  undefined on input li
-ne 194.
+ne 132.
 
 
 LaTeX Warning: Citation `bowman:reasoning' on page \thepage  undefined on input
- line 220.
+ line 158.
 
 
-LaTeX Warning: Citation `clark:pct' on page \thepage  undefined on input line 2
-20.
+LaTeX Warning: Citation `clark:pct' on page \thepage  undefined on input line 1
+58.
 
 
 LaTeX Warning: Citation `braams:babel' on page \thepage  undefined on input lin
-e 220.
+e 158.
 
 
 LaTeX Warning: Citation `herlihy:methodology' on page \thepage  undefined on in
-put line 220.
+put line 158.
 
 
-LaTeX Warning: Citation `clark:pct' on page \thepage  undefined on input line 2
-22.
+LaTeX Warning: Citation `clark:pct' on page \thepage  undefined on input line 1
+60.
 
 
 LaTeX Warning: Citation `salas:calculus' on page \thepage  undefined on input l
-ine 222.
+ine 160.
 
 
 LaTeX Warning: Citation `Lamport:LaTeX' on page \thepage  undefined on input li
-ne 222.
+ne 160.
 
 
 LaTeX Warning: Citation `Lamport:LaTeX' on page \thepage  undefined on input li
-ne 228.
+ne 166.
 
 
 LaTeX Warning: Citation `Lamport:LaTeX' on page \thepage  undefined on input li
-ne 239.
+ne 177.
 
-[2]
 Package epstopdf Info: Source file: <fly.eps>
 (epstopdf)                    date: 2013-05-03 16:07:26
 (epstopdf)                    size: 155104 bytes
@@ -375,13 +355,13 @@ Package epstopdf Info: Source file: <fly.eps>
 (epstopdf)                    size: 4243 bytes
 (epstopdf)             Command: <repstopdf --outfile=fly-eps-converted-to.pdf f
 ly.eps>
-(epstopdf)             \includegraphics on input line 314.
+(epstopdf)             \includegraphics on input line 252.
 Package epstopdf Info: Output file is already uptodate.
- <fly-eps-converted-to.pdf, id=26, 34.1275pt x 32.12pt>
+<fly-eps-converted-to.pdf, id=18, 34.1275pt x 32.12pt>
 File: fly-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fly-eps-converted-to.pdf>
-Package pdftex.def Info: fly-eps-converted-to.pdf used on input line 314.
+Package pdftex.def Info: fly-eps-converted-to.pdf used on input line 252.
 (pdftex.def)             Requested size: 34.1274pt x 32.1199pt.
 Package epstopdf Info: Source file: <fly.eps>
 (epstopdf)                    date: 2013-05-03 16:07:26
@@ -391,20 +371,21 @@ Package epstopdf Info: Source file: <fly.eps>
 (epstopdf)                    size: 4243 bytes
 (epstopdf)             Command: <repstopdf --outfile=fly-eps-converted-to.pdf f
 ly.eps>
-(epstopdf)             \includegraphics on input line 320.
+(epstopdf)             \includegraphics on input line 258.
 Package epstopdf Info: Output file is already uptodate.
 File: fly-eps-converted-to.pdf Graphic file (type pdf)
  <use fly-eps-converted-to.pdf>
-Package pdftex.def Info: fly-eps-converted-to.pdf used on input line 320.
+Package pdftex.def Info: fly-eps-converted-to.pdf used on input line 258.
 (pdftex.def)             Requested size: 72.27492pt x 72.27565pt.
 
 
 LaTeX Font Warning: Font shape `T1/aett/bx/n' undefined
-(Font)              using `T1/aett/m/n' instead on input line 322.
+(Font)              using `T1/aett/m/n' instead on input line 260.
 
+[2 <./fly-eps-converted-to.pdf>]
 \c@theorem=\count115
 
-Underfull \hbox (badness 1603) in paragraph at lines 346--350
+Underfull \hbox (badness 1603) in paragraph at lines 284--288
 []\T1/aer/m/n/9 This uses the \T1/aer/bx/n/9 the-o-rem \T1/aer/m/n/9 en-vi-ron-
 ment, cre-ated by the
  []
@@ -418,16 +399,16 @@ Package epstopdf Info: Source file: <flies.eps>
 (epstopdf)                    size: 9687 bytes
 (epstopdf)             Command: <repstopdf --outfile=flies-eps-converted-to.pdf
  flies.eps>
-(epstopdf)             \includegraphics on input line 370.
+(epstopdf)             \includegraphics on input line 308.
 Package epstopdf Info: Output file is already uptodate.
-<flies-eps-converted-to.pdf, id=27, 307.1475pt x 114.4275pt>
+<flies-eps-converted-to.pdf, id=28, 307.1475pt x 114.4275pt>
 File: flies-eps-converted-to.pdf Graphic file (type pdf)
 
 <use flies-eps-converted-to.pdf>
-Package pdftex.def Info: flies-eps-converted-to.pdf used on input line 370.
+Package pdftex.def Info: flies-eps-converted-to.pdf used on input line 308.
 (pdftex.def)             Requested size: 307.14674pt x 114.42722pt.
 
-Overfull \hbox (15.60826pt too wide) detected at line 395
+Overfull \hbox (15.60826pt too wide) detected at line 333
 \OML/cmm/m/it/9 l \OT1/cmr/m/n/9 = [] \OML/cmm/m/it/9 f\OT1/cmr/m/n/9 (\OML/cmm
 /m/it/9 x\OT1/cmr/m/n/9 ) = [] [] = [] \OML/cmm/m/it/9 g\OT1/cmr/m/n/9 (\OML/cm
 m/m/it/9 x\OT1/cmr/m/n/9 ) \OMS/cmsy/m/n/9 ^^A [] [] \OT1/cmr/m/n/9 = 0 \OMS/cm
@@ -436,9 +417,9 @@ sy/m/n/9 ^^A \OML/cmm/m/it/9 L \OT1/cmr/m/n/9 = 0\OML/cmm/m/it/9 ;
 
 
 LaTeX Warning: Citation `salas:calculus' on page \thepage  undefined on input l
-ine 405.
+ine 343.
 
-[3 <./fly-eps-converted-to.pdf>]
+[3]
 No file sigproc-sp.bbl.
 [4 <./flies-eps-converted-to.pdf>] (./sigproc-sp.aux)
 
@@ -446,11 +427,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 2840 strings out of 493488
- 36151 string characters out of 3141326
- 99250 words of memory out of 3000000
+ 2838 strings out of 493488
+ 36138 string characters out of 3141326
+ 98250 words of memory out of 3000000
  6057 multiletter control sequences out of 15000+200000
- 61996 words of font info for 85 fonts, out of 3000000 for 9000
+ 59682 words of font info for 83 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  41i,10n,26p,258b,246s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -467,14 +448,14 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local/texlive/2012/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2012/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2012/texmf-d
 ist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2012/texmf-dist/fon
-ts/type1/urw/helvetic/uhvbo8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/typ
-e1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/
-times/utmb8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmb
-i8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sigproc-sp.pdf (4 pages, 216620 bytes).
+ts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type
+1/urw/times/utmb8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/time
+s/utmbi8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmri8a
+.pfb>
+Output written on sigproc-sp.pdf (4 pages, 209630 bytes).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
- 69 compressed objects within 1 object stream
+ 93 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
