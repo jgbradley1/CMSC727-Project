@@ -1,12 +1,6 @@
 addpath('../');
 
-inputSize = 1;
 outputSize = 1;
-reservoirSize = 100;
-leakRate = 0.5;
-spectralRadius = 0.5;
-forgetSize = 100;
-
 trainingSize = 4000;
 testingSize = 1000;
 
