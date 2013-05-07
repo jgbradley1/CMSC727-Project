@@ -1,4 +1,4 @@
-clear('data','col_names','samples','targets','net');
+clear('data','col_names','samples','targets','net','tr');
 clear('trn_t','trn_s','tst_t','tst_s');
 clear('Xs','Xi','Ai','Ts','pred','true','mse');
 
@@ -24,10 +24,11 @@ net = elmannet(1:2,net_size,'trainrp');
 %net.trainParam.max_fail = 20;
 
 % train net
-net = train(net,Xs,Ts,Xi,Ai);
+[net,tr] = train(net,Xs,Ts,Xi,Ai);
 
 % check performance
-pred = net(samples(4000:5000));
-true = targets(4000:5000);
-mse = mean((pred-true).^2);
+%pred = net(samples(4000:5000));
+%true = targets(4000:5000);
+%mse = mean((pred-true).^2);
+mse = tr.best_perf;
 mse

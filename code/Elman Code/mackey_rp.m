@@ -1,4 +1,4 @@
-clear('data','col_names','samples','targets','net');
+clear('data','col_names','samples','targets','net','tr');
 clear('trn_t','trn_s','tst_t','tst_s');
 clear('pred','true','mse');
 
@@ -18,10 +18,11 @@ net = fitnet(net_size,'trainrp');
 %net.trainParam.max_fail = 20;
 
 % train net
-net = train(net,trn_s,trn_t);
+[net,tr] = train(net,trn_s,trn_t);
 
 % check performance
-pred = net(tst_s);
-true = tst_t;
-mse = mean((pred-true).^2);
+%pred = net(tst_s);
+%true = tst_t;
+%mse = mean((pred-true).^2);
+mse = tr.best_perf;
 mse
