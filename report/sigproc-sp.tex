@@ -2,7 +2,7 @@
 
 \begin{document}
 
-\title{A Comparative Study of the ESN and Elman Networks}
+\title{A Comparative Study of the Echo State Networks}
 
 \numberofauthors{2}
 \author{
@@ -21,37 +21,11 @@ Joshua Bradley\\
 
 \maketitle
 \begin{abstract}
-This paper provides a sample of a \LaTeX\ document which conforms to
-the formatting guidelines for ACM SIG Proceedings.
-It complements the document \textit{Author's Guide to Preparing
-ACM SIG Proceedings Using \LaTeX$2_\epsilon$\ and Bib\TeX}. This
-source file has been written with the intention of being
-compiled under \LaTeX$2_\epsilon$\ and BibTeX.
-
-The developers have tried to include every imaginable sort
-of ``bells and whistles", such as a subtitle, footnotes on
-title, subtitle and authors, as well as in the text, and
-every optional component (e.g. Acknowledgments, Additional
-Authors, Appendices), not to mention examples of
-equations, theorems, tables and figures.
-
-To make best use of this sample document, run it through \LaTeX\
-and BibTeX, and compare this source code with the printed
-output produced by the dvi file.
+In this study, we compare the performance and behavior of an echo state network (ESN) to several recurrent neural network architectures, including the Elman network, Jordan network, and feedforward network, when applied to the task of nonlinear time series forecasting. We will describe several benchmark tests used and provide a discussion of the results.
 \end{abstract}
 
 \section{Introduction}
-The \textit{proceedings} are the records of a conference.
-ACM seeks to give these conference by-products a uniform,
-high-quality appearance.  To do this, ACM has some rigid
-requirements for the format of the proceedings documents: there
-is a specified format (balanced  double columns), a specified
-set of fonts (Arial or Helvetica and Times Roman) in
-certain specified sizes (for instance, 9 point for body copy),
-a specified live area (18 $\times$ 23.5 cm [7" $\times$ 9.25"]) centered on
-the page, specified size of margins (1.9 cm [0.75"]) top, (2.54 cm [1"]) bottom
-and (1.9 cm [.75"]) left and right; specified column width
-(8.45 cm [3.33"]) and gutter size (.83 cm [.33"]).
+In this study, we compare the performance and behavior of an echo state network (ESN) to several recurrent neural network architectures, including the Elman network, Jordan network, and feedforward network, when applied to the task of nonlinear time series forecasting. We will describe several benchmark tests used and provide a discussion of the results.
 
 The good news is, with only a handful of manual
 settings\footnote{Two of these, the {\texttt{\char'134 numberofauthors}}
@@ -91,30 +65,8 @@ the \textbf{document} environment, you can indicate the
 start of a new paragraph with a blank line in your
 input file; that is why this sentence forms a separate paragraph.
 
-\subsection{Type Changes and {\subsecit Special} Characters}
-We have already seen several typeface changes in this sample.  You
-can indicate italicized words or phrases in your text with
-the command \texttt{{\char'134}textit}; emboldening with the
-command \texttt{{\char'134}textbf}
-and typewriter-style (for instance, for computer code) with
-\texttt{{\char'134}texttt}.  But remember, you do not
-have to indicate typestyle changes when such changes are
-part of the \textit{structural} elements of your
-article; for instance, the heading of this subsection will
-be in a sans serif\footnote{A third footnote, here.
-Let's make this a rather short one to
-see how it looks.} typeface, but that is handled by the
-document class file. Take care with the use
-of\footnote{A fourth, and last, footnote.}
-the curly braces in typeface changes; they mark
-the beginning and end of
-the text that is to be in the different typeface.
-
-You can use whatever symbols, accented characters, or
-non-English characters you need anywhere in your document;
-you can find a complete list of what is
-available in the \textit{\LaTeX\
-User's Guide}\cite{Lamport:LaTeX}.
+\subsection{Data}
+Selection of the datasets used in our study was very important. To ensure a fair comparison of the echo state network and other supervised learning methods when applied to time series forecasting, datasets exhibiting specific traits must be chosen.
 
 \subsection{Math Equations}
 You may want to display math equations in three distinct styles:
