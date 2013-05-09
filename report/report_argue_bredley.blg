@@ -1,0 +1,13 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: report_argue_bredley.aux
+The style file: abbrv.bst
+I couldn't open database file sigproc.bib
+---line 13 of file report_argue_bredley.aux
+ : \bibdata{sigproc
+ :                 }
+I'm skipping whatever remains of this command
+I found no database files---while reading file report_argue_bredley.aux
+Warning--I didn't find a database entry for "industryportfolio"
+Warning--I didn't find a database entry for "Hebrail+Berard:2012"
+Warning--I didn't find a database entry for "Jaeger1"
+Warning--I didn't find a database entry for "Jaeger2"
+(There were 2 error messages)

@@ -1,0 +1,23 @@
+\begin{thebibliography}{1}
+
+\bibitem{industryportfolio}
+Industry-portfolio, 2011.
+
+\bibitem{Hebrail+Berard:2012}
+G.~Hebrail and A.~Berard.
+\newblock Individual household electric power consumption data set, 2012.
+
+\bibitem{Jaeger2}
+H.~Jaeger.
+\newblock Reservoir riddles: suggestions for echo state network research.
+\newblock In {\em Neural Networks, 2005. IJCNN '05. Proceedings. 2005 IEEE
+  International Joint Conference on}, volume~3, pages 1460--1462 vol. 3, 2005.
+
+\bibitem{Jaeger1}
+H.~Jaeger, M.~Lukoševičius, D.~Popovici, and U.~Siewert.
+\newblock Optimization and applications of echo state networks with leaky-
+  integrator neurons.
+\newblock {\em Neural Networks}, 20(3):335 -- 352, 2007.
+\newblock Echo State Networks and Liquid State Machines.
+
+\end{thebibliography}
