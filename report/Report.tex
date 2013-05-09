@@ -50,9 +50,9 @@ The ESN performed best on the Mackey glass dataset, proving to be approximately 
 
 The run time experiment was conducted under the same circumstances as the second experiment, however was only run on the power data set, and only one run was made for each data point.
 
-(GRAPH)
+\includegraphics[scale=0.7]{time_plot.png}
 
-Additionally, it should be noted that the ESN took significantly less time to train, especially with a larger network size, and produced much more consistant results than the Elman network.
+The ESN took significantly less time to train, especially with a larger network size, running orders of magnitude faster than the Elman net, even at a small network size.
 
 \section{Future Work}
 Our ESN also has the ability to have output to reservoir connections, which we felt would be good to include for a comparison to Jordan nets. We were unable to finish debugging the Jordan nets in time to be able to conduct this comparison, so it is being left as future work. Additionally, parameter optimization for the Matlab nets should be performed, and other learning meathods for them would be interesting to investigate. Our ESN could also be adapted to work on multiple time series, and comparisons could be done with those.  
