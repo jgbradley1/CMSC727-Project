@@ -39,20 +39,23 @@ For all of the parameter, the Mackey-Glass performance stayed constant, which is
 
 In the second experiment we compared our ESN to other, commercially available neural networks. In particular we compared it to a feedforward network as a control, and to Elman and Jordan networks as examples of other recurrent nets. Matlab's Neural Network Toolbok was used for these networks. All three of the comparison networks were trained using RProp, and a best of three runs approach was taken in attempt to minimize the effect of outliers. We varied the size of the hidden layer (the reservoir in the case of our ESN) for some variety in architecture. The ESN used parameters optimized to each data set, while the other networks used default Matlab parameters in the interest of time.
 
-(GRAPHS)
+\includegraphics[scale=0.7]{mackey_plot.png}
+\includegraphics[scale=0.7]{power_plot.png}
+\includegraphics[scale=0.7]{stocks_plot.png}
 
 The ESN performed best on the Mackey glass dataset, proving to be approximately equal to the Elman net, though with significantly higer consistancy, which matches with our expectations. For the power consumption dataset, the ESN performed somewhat poorer than the feedforward and Elman nets, with approximately double the error. On the stocks dataset the ESN performed significantly worse than the feedforward and Elman nets. This seems to indicate a general trend that the ESN performs more comparably on datasets which have fewer features, and instead tend to be more pure functions of time. Contrary to our initial hypothesis, did not seem to perform significantly worse compared to the other networks on the data set with missing data (the power consumption data set). 
 
 The run time experiment was conducted under the same circumstances as the second experiment, however was only run on the power data set, and only one run was made for each data point.
 
-(GRAPHS)
+(GRAPH)
 
 Additionally, it should be noted that the ESN took significantly less time to train, especially with a larger network size, and produced much more consistant results than the Elman network.
 
 \section{Future Work}
-
+Our ESN also has the ability to have output to reservoir connections, which we felt would be good to include for a comparison to Jordan nets. We were unable to finish debugging the Jordan nets in time to be able to conduct this comparison, so it is being left as future work. Additionally, parameter optimization for the Matlab nets should be performed, and other learning meathods for them would be interesting to investigate. Our ESN could also be adapted to work on multiple time series, and comparisons could be done with those.  
 
 \section{Conclusions}
-Our ESN performed reasonably well as compared to other simple recurrent nets. In general the Elman net tended to have better performance, especially on featured data, but took significantly longer to train, and was more prone to getting stuck in bad local minima.
+Our ESN performed reasonably well as compared to other simple recurrent nets. In general the ENS net tended to have somewhat worse performance, especially on featured data, but took a significantly shorter time to train, and was less prone to getting stuck in bad local minima, especially as compared to the Elman net. 
+(WHAT ELSE DO YOU WANT TO SAY HERE?)
 
 \end{document}
