@@ -33,7 +33,10 @@ $$reservoirSize = 100$$
 $$spectralRadius = 0.5$$
 $$forgetSize = 100$$
 
-(GRAPHS)
+\includegraphics[scale=0.7]{ForgetSizeOptimization.png}
+\includegraphics[scale=0.7]{SpectralRadiusOptimization.png}
+\includegraphics[scale=0.7]{ReservoirSizeOptimization.png}
+\includegraphics[scale=0.7]{LeakRateOptimization.png}
 
 For all of the parameter, the Mackey-Glass performance stayed constant, which is consistant with what we saw for other networks. $forgetSize$ appearned to have little to no effect on the performance of the ESN, while the expectation was that there would be higher towards 0, which would quickly drop to a stable value. The ESN tended to perform better with smaller $spectralRadius$.  $reservoirSize$ similarly had a positive correlation with error, which is the opposite of expectation.  The decay of error with a higher $leakRate$ matched what we expected to happen.  Possible explanations for these results not matching our hypothesised results are (JOSH PUT SOMETHING HERE I DON'T KNOW).
 
