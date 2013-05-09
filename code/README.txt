@@ -3,6 +3,7 @@ NOTES
 1)
 To run an ESN with NO backpropagation connections from the output to the reservoir, use main.m.
 To run an ESN that HAS backpropagation connections from the output to the reservoir, use main2.m.
+To run the comparison experiments, simply run the appropriate experiment script in the Comparison code directory. Results will be placed into a corresponding .mat file. Note that these require the Matlab Neural Network Toolbox.
 
 
 2)
