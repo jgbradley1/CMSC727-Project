@@ -129,12 +129,12 @@ In the second experiment we compared our ESN to other, commercially available ne
 \includegraphics[scale=0.7]{stocks_plot.png}
 \end{center}
 
-The ESN performed best on the Mackey-Glass dataset, proving to be approximately equal to the Elman net in terms of MSE, though with a significantly higher consistency, which matched with our expectations. For the power consumption dataset, the ESN performed somewhat poorer than the feed-forward and Elman net, with approximately double the error. On the stocks dataset the ESN performed significantly worse than the feedforward and Elman nets. This seems to indicate a general trend that the ESN performs more comparably on datasets which have fewer features, and instead tend to be more pure functions of time. Once again, a closer analysis of the weight connections from the input nodes may yield further insight into this behavior. Contrary to our initial hypothesis, did not seem to perform significantly worse compared to the other networks on the data set with missing data (the power consumption data set). 
+The ESN performed best on the Mackey-Glass dataset, proving to be approximately equal to the Elman net in terms of MSE, though with a significantly less variance across runs, which matched with our expectations. For the power consumption dataset, the ESN performed somewhat poorer than the feed-forward and Elman net, with approximately double the error. On the stocks dataset the ESN performed significantly worse than the feedforward and Elman nets. This seems to indicate a general trend that the ESN performs more comparably on datasets which have fewer features, and instead tend to be more pure functions of time. Once again, a closer analysis of the weight connections from the input nodes may yield further insight into this behavior. Contrary to our initial hypothesis, did not seem to perform significantly worse compared to the other networks on the data set with missing data (the power consumption data set). 
 
 The run-time experiment was conducted under the same circumstances as the second experiment, however was only run on the power data set. The run-time was taken to be the average of three runs.
 
 \begin{center}
-\includegraphics[scale=0.45]{time_plot.png}
+\includegraphics[scale=0.7]{time_plot.png}
 \end{center}
 
 The ESN took significantly less time to train, especially with larger reservoir sizes, running orders of magnitude faster than the Elman net, even at a small network size.
