@@ -33,7 +33,7 @@ Joshua Bradley\\
 
 \maketitle
 \begin{abstract}
-In this study, we compare the performance and behavior of an echo state network (ESN) to the Elman recurrent neural network architecture when applied to the task of nonlinear time series forecasting. To provide a representative baseline in our study, we also give performance comparisons to a feedforward network as well. We will describe several benchmark tests used and provide a discussion of the results.
+In this study, we compare the performance and behavior of an echo state network (ESN) to the Elman recurrent neural network architecture when applied to the task of nonlinear time series forecasting. To provide a representative baseline in our study, we also give performance comparisons to a feedforward network as well. We will describe several benchmark tests used and provide a discussion of the results. We found that the ESN perfomed best on non-featured time series, and was resiliant to data with missing entries. While the ESN perfomed somewhat worse on some tasks than the Elman net, it ran much quicker and with higher consistancy.
 \end{abstract}
 
 \section{Introduction}
@@ -105,7 +105,7 @@ When feedback connections from the output to the reservoir are considered, the u
 \section{Experiments}
 For the analysis of our ESN, three experiments were run. The initial experiment was parameter optimization for three paremters of the ESN, and sought to explore the effects of network architecture and learning rule parameters on the performance of the model. In all experiments, performance was measured as the mean square error (MSE) of ESN output vs. actual test immediately following the training data. Lastly a run-time comparison of the networks was conducted using the power consumption data set.
 
-Parameter optimization for the ESN was run over the following parameters: \emph{leak rate}, \emph{reservoir size}, \emph{spectral radius}, and \emph{forget size}. For each data set each parameter was varied independently of the others, and were held at default values of
+Parameter optimization for the ESN was run over the following parameters: \emph{leak rate}, \emph{reservoir size}, \emph{spectral radius}, and \emph{forget size}. For each data set each parameter was varied independently of the others, which were held at default values of
 \begin{align*}
 \text{leak rate} &= 0.5 \\
 \text{reservoir size} &= 100 \\
@@ -131,7 +131,7 @@ In the second experiment we compared our ESN to other, commercially available ne
 
 The ESN performed best on the Mackey-Glass dataset, proving to be approximately equal to the Elman net in terms of MSE, though with a significantly higher consistency, which matched with our expectations. For the power consumption dataset, the ESN performed somewhat poorer than the feed-forward and Elman net, with approximately double the error. On the stocks dataset the ESN performed significantly worse than the feedforward and Elman nets. This seems to indicate a general trend that the ESN performs more comparably on datasets which have fewer features, and instead tend to be more pure functions of time. Once again, a closer analysis of the weight connections from the input nodes may yield further insight into this behavior. Contrary to our initial hypothesis, did not seem to perform significantly worse compared to the other networks on the data set with missing data (the power consumption data set). 
 
-The run-time experiment was conducted under the same circumstances as the second experiment, however was only run on the power data set and only one run made for each data point.
+The run-time experiment was conducted under the same circumstances as the second experiment, however was only run on the power data set. The run-time was taken to be the average of three runs.
 
 \begin{center}
 \includegraphics[scale=0.45]{time_plot.png}
